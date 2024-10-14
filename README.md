@@ -17,3 +17,10 @@ docker login <DOCKER_REGISTRY>
 docker tag <IMAGE_ID> srbarrios/rubocop:ruby-2.5.9
 docker push srbarrios/rubocop:ruby-2.5.9
 ```
+
+
+## How to use it
+
+```
+docker run --rm --volume "$PWD:/app" <DOCKER_REGISTRY>/srbarrios/rubocop:ruby-3.3
+```
